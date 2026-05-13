@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-^0hw0s2x-=0l#s0-q@t=@&zxducvc_ppu5md949h3evic2!q4&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["trip-api.mrsajib.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
