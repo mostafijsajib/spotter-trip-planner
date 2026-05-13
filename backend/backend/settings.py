@@ -133,5 +133,5 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://trip.mrsajib.com", 
+    "https://trip-api.mrsajib.com", 
 ]
