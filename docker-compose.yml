@@ -5,7 +5,7 @@ services:
       - "8084:8000"
     volumes:
       - ./backend:/app
-    command: python manage.py runserver 0.0.0.0:8084
+    command: python manage.py runserver 0.0.0.0:8000
 
   frontend:
     build: ./frontend
