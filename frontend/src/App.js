@@ -81,12 +81,14 @@ export default function App() {
   const [error, setError] = useState('');
   const [result, setResult] = useState(null);
 
+  const backendUrl = "https://trip-api.mrsajib.com";
+
   const handleSubmit = async e => {
     e.preventDefault();
     setError('');
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:8000/api/trips/calculate/', {
+      const res = await axios.post(`${backendUrl}/api/trips/calculate/`, {
         ...form,
         cycle_used_hours: parseFloat(form.cycle_used_hours) || 0,
       });
